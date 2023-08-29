@@ -1,6 +1,8 @@
 # FastSAM_Testing
 Este proyecto utiliza FastSAM para llevar a cabo tareas de segmentación en imágenes. Ofrece dos scripts: uno para segmentar todos los elementos en una imagen y otro para segmentar un objeto específico en la imagen mediante texto descriptivo.
 
+![Ejemplo de Segmentación](images/capture.png)
+
 ## Requisitos
 Paquetes de Python
 Instale los paquetes de Python necesarios enumerados en el archivo requirements.txt con el siguiente comando:
