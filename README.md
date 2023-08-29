@@ -39,7 +39,7 @@ Para segmentar un objeto específico, cambie la variable prompt_texto en el scri
 
 ## Estructura del Proyecto
 
-´´´
+```
 .
 ├── segment_everything.py
 ├── segment_by_text.py
@@ -50,7 +50,7 @@ Para segmentar un objeto específico, cambie la variable prompt_texto en el scri
 ├── images/
 │   └── carne/
 └── output/
-´´´
+```
 
 ## Documentación Adicional
 Para obtener más información, visite How to Use FastSAM.
