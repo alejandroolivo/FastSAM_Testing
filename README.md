@@ -53,4 +53,4 @@ Para segmentar un objeto específico, cambie la variable prompt_texto en el scri
 ```
 
 ## Documentación Adicional
-Para obtener más información, visite How to Use FastSAM.
+Para obtener más información, visite [How to Use FastSAM](https://blog.roboflow.com/how-to-use-fastsam/).
