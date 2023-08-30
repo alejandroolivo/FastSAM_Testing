@@ -7,7 +7,7 @@ import os
 import torch
 
 model = FastSAM('./weights/FastSAM.pt')
-DEVICE = 'cpu' # 'cuda:0' if torch.cuda.is_available() else 'cpu'
+DEVICE = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
 folder = 'images/carne/'
 
@@ -19,7 +19,7 @@ for filename in os.listdir(folder):
 
 for idx, img_name in enumerate(Images):
     path = os.path.join(folder, img_name)
-    everything_results = model(path, device=DEVICE, retina_masks=True, imgsz=512, conf=0.8, iou=0.9)
+    everything_results = model(path, device=DEVICE, retina_masks=True, imgsz=512, conf=0.80, iou=0.9)
     prompt_process = FastSAMPrompt(path, everything_results, device=DEVICE)
     ann = prompt_process.everything_prompt()
     output_filename = f'output_{idx}.jpg'
